@@ -57,9 +57,11 @@ function genesis_child_gutenberg_support() { // phpcs:ignore WordPress.NamingCon
 }
 
 // Registers the responsive menus.
+/*
 if ( function_exists( 'genesis_register_responsive_menus' ) ) {
 	genesis_register_responsive_menus( genesis_get_config( 'responsive-menus' ) );
 }
+*/
 
 add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_scripts_styles' );
 /**
@@ -128,8 +130,12 @@ function genesis_sample_post_type_support() {
 }
 
 // Adds image sizes.
-add_image_size( 'sidebar-featured', 75, 75, true );
-add_image_size( 'genesis-singular-images', 702, 526, true );
+//add_image_size( 'sidebar-featured', 75, 75, true );
+//add_image_size( 'genesis-singular-images', 702, 526, true );
+add_image_size( 'card-ratio32', 768, 512, true );
+add_image_size( 'icon-ratio32', 150, 100, true );
+add_image_size( 'card-ratio169', 768, 432, true );
+add_image_size( 'icon-ratio169', 150, 85, true );
 
 // Removes header right widget area.
 unregister_sidebar( 'header-right' );
@@ -199,3 +205,25 @@ function genesis_sample_comments_gravatar( $args ) {
 	return $args;
 
 }
+
+// ------------------------------------------------------------------------
+// SETUP-3120 - CREDITS SWP
+
+//* Add the credits section on the site footer
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+add_action( 'genesis_footer', 'setup_sitefooter_credit_swp' );
+function setup_sitefooter_credit_swp() {
+	?>
+	<div class="credit">
+		<div class="sitefor">
+			<div class="credit-brand"></div>
+			<div class="credit-copyright">Copyright © <?php echo date("Y"); ?> Smarter Better · All Rights Reserved | <a href="<?php echo site_url(); ?>/privacy-policy/">Privacy Policy</a></div>
+			<div class="credit-designby">Site Design by <a href="https://smarterwebpackages.com/">SmarterWebPackages.com</a></div>
+		</div>
+		<div class="siteby"><a href="https://smarterwebpackages.com/">SmarterWebPackages.com</a></div>
+	</div>
+	<?php
+}
+
+// CREDITS -- END
+// ------------------------------------------------------------------------
