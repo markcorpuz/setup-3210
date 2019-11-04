@@ -1,4 +1,5 @@
-/* SETUP | SETUP-3120 | STYLE - 2019-09-23 9:35 AM */
+/* SETUP | SETUP-3120 | STYLE - 2019-11-04 7:03 AM */
+// SETUP-3120 B
 // SETUP-3120 A
 // SETUP-3100 A
 // GENESIS-SAMPLE 3.1.0
@@ -12,20 +13,20 @@
 @import 	"neat";
 @import 	"grid/3120_setup/neat";
 
-// -------------------------------------------------------------------- SELECTORS | 2019-04-17
+// -------------------------------------------------------------------- SELECTORS | 2019-04-17	SETUP-3120-B
 @import 	"selector/2911_setup/boxsizing";
 @import 	"selector/2911_setup/clear";
 @import 	"selector/2911_setup/display";
 
-// -------------------------------------------------------------------- VARIABLES | 2019-09-23
+// -------------------------------------------------------------------- VARIABLES | 2019-10-03	SETUP-3120-B
 
 // WIDTH
 @import 	"variables/2911_setup/width-grid";
-@import 	"variables/2911_setup/width-layout";
-@import 	"variables/2911_setup/width-range";
+@import 	"variables/3120_setup/width-layout";
+@import 	"variables/3120_setup/width-range";
 @import 	"variables/2911_setup/width-space";
 @import 	"variables/2911_setup/width-line";
-@import 	"variables/2911_setup/responsive-range";
+@import 	"variables/3120_setup/responsive-range";
 
 // TYPOGRAPHY
 @import 	"variables/3120_setup/fontfamily";
@@ -35,53 +36,53 @@
 @import 	"variables/3120_setup/letterspacing";
 @import 	"variables/3120_setup/color";
 
-// -------------------------------------------------------------------- COLOR | 2019-04-02
+// -------------------------------------------------------------------- COLOR | 2019-04-02	 	SETUP-3120-B
 @import 	"color/2911_setup/color";
 @import 	"color/2911_setup/bgcolor";
 
-// -------------------------------------------------------------------- EFFECT | 2019-04-02
+// -------------------------------------------------------------------- EFFECT | 2019-04-02 	SETUP-3120-B
 @import 	"effect/2911_setup/tint";
 @import 	"effect/2911_setup/fade";
 @import 	"effect/2911_setup/shadow";
 @import 	"effect/2911_setup/shade";
 
 
-@import 	"genesis/genesis-sample-271/typographical-elements";		// GENESIS-SAMPLE 2.7.1
+@import 	"genesis/genesis-sample-271/typographical-elements";		// GENESIS-SAMPLE 2.7.1	SETUP-3120-B
 
 
-// -------------------------------------------------------------------- CONTENT | 2019-08-24
+// -------------------------------------------------------------------- CONTENT | 2019-10-31	SETUP-3120-B
 @import 	"content/2911_setup/link";
 @import 	"content/2911_setup/body";
 @import 	"content/2911_setup/headline";
 @import 	"content/2911_setup/paragraph";
-@import 	"content/2911_setup/list";
-@import 	"content/3020_setup/title";
-@import 	"content/2911_setup/align";
-@import 	"content/2911_setup/button";
+@import 	"content/3120_setup/list";
+@import 	"content/3120_setup/title";
+@import 	"content/3120_setup/align";
+@import 	"content/3120_setup/button";
 @import 	"content/2911_setup/fullwidth";
 @import 	"content/2911_setup/block";
 @import 	"content/3100_setup/border";
 
-// -------------------------------------------------------------------- TYPE | 2019-07-23
+// -------------------------------------------------------------------- TYPE | 2019-10-23		SETUP-3120-B
 @import 	"type/2911_setup/family";
 @import 	"type/3020_setup/size";
 @import 	"type/2911_setup/weight";
-@import 	"type/2911_setup/height";
+@import 	"type/3120_setup/height";
 
-// -------------------------------------------------------------------- SPACING | 2019-04-02
+// -------------------------------------------------------------------- SPACING | 2019-04-02	SETUP-3120-B
 @import 	"spacing/2911_setup/space";
 @import 	"spacing/2911_setup/space-responsive";
 @import 	"spacing/2911_setup/spacein";
 @import 	"spacing/2911_setup/spacein-responsive";
 
-// -------------------------------------------------------------------- FORM | 2019-04-02
+// -------------------------------------------------------------------- FORM | 2019-04-02		SETUP-3120-B
 @import 	"form/2911_setup/button";
 
 
-@import 	"genesis/genesis-sample-291/defaults";						// GENESIS-SAMPLE 2.9.1
+@import 	"genesis/genesis-sample-291/defaults";						// GENESIS-SAMPLE 2.9.1	SETUP-3120-B
 
 
-// -------------------------------------------------------------------- GRID | 2019-04-02
+// -------------------------------------------------------------------- GRID | 2019-10-31		SETUP-3120-B
 @import 	"grid/2911_setup/column_grid";
 @import 	"grid/2911_setup/grid_grid";
 @import 	"grid/2911_setup/column-responsive_grid";
@@ -91,7 +92,7 @@
 
 @import 	"genesis/genesis-sample-291/structure-layout";				// GENESIS-SAMPLE 2.9.1
 @import 	"genesis/genesis-sample-291/common-classes";				// GENESIS-SAMPLE 2.9.1
-@import 	"genesis/genesis-sample-291/widgets";						// GENESIS-SAMPLE 2.9.1
+//@import 	"genesis/genesis-sample-291/widgets";						// GENESIS-SAMPLE 2.9.1
 @import 	"genesis/genesis-sample-291/plugins";						// GENESIS-SAMPLE 2.9.1
 @import 	"genesis/genesis-sample-291/skip-links";					// GENESIS-SAMPLE 2.9.1
 @import 	"genesis/genesis-sample-291/site-header";					// GENESIS-SAMPLE 2.9.1
@@ -102,28 +103,35 @@
 @import 	"genesis/genesis-sample-291/site-footer";					// GENESIS-SAMPLE 2.9.1
 
 
-// -------------------------------------------------------------------- MENU | 2019-07-24
-@import 	"menu/3020_setup/nav";
+// -------------------------------------------------------------------- MENU | 2019-10-17		SETUP-3120-B
+//@import 	"menu/3120_setup/default";
+@import 	"menu/3120_setup/nav";
 
-// -------------------------------------------------------------------- HEADER | 2019-07-29
+// -------------------------------------------------------------------- HEADER | 2019-07-29		SETUP-3120-B
 @import 	"header/3020_setup/header-leftright-line_flex";
 
-// -------------------------------------------------------------------- INNER | 2019-04-02
-@import 	"inner/2911_setup/inner_grid";
+// -------------------------------------------------------------------- INNER | 2019-10-04		SETUP-3120-B
+@import 	"inner/3120_setup/inner";
 
-// -------------------------------------------------------------------- LAYOUT | 2019-04-02
+// -------------------------------------------------------------------- LAYOUT | 2019-10-07		SETUP-3120-B
 //@import 	"layout/2911_setup/full_grid";
-@import 	"layout/2911_setup/cs_grid";
-@import 	"layout/2911_setup/sc_grid";
+@import 	"layout/3120_setup/cs_grid";
+@import 	"layout/3120_setup/sc_grid";
 
-// -------------------------------------------------------------------- FOOTER | 2019-04-02
+// -------------------------------------------------------------------- FOOTER | 2019-09-28		SETUP-3120-B
 @import 	"footer/2911_setup/footer_grid";
+//@import 	"footer/3120_setup/footer-darkmode_grid";
 
-// -------------------------------------------------------------------- CREDIT | 2019-04-02
+// -------------------------------------------------------------------- CREDIT | 2019-09-28		SETUP-3120-B
 @import 	"credit/2911_setup/credit-swp_grid";
+//@import 	"credit/3120_setup/credit-swp-darkmode_grid";
 
-// -------------------------------------------------------------------- LOOP | 2019-08-15
-@import 	"loop/3020_setup/entry";
+// -------------------------------------------------------------------- WIDGET | 2019-10-14		SETUP-3120-B
+@import 	"widget/3120_setup/widget";
+
+// -------------------------------------------------------------------- LOOP | 2019-10-15		SETUP-3120-B
+@import 	"loop/3120_setup/breadcrumb";
+@import 	"loop/3120_setup/entry";
 @import 	"loop/3020_setup/entrytitle";
 @import 	"loop/3020_setup/entrymeta";
 @import 	"loop/3020_setup/entryimage";
@@ -131,18 +139,19 @@
 @import 	"loop/3020_setup/avatar";
 @import 	"loop/3020_setup/comments";
 
-// -------------------------------------------------------------------- GUI | 2019-04-02
+
+// -------------------------------------------------------------------- GUI | 2019-04-02		SETUP-3120-B
 @import 	"gui/2911_setup/flex";
 @import 	"gui/2911_setup/outerinner";
 
-// -------------------------------------------------------------------- GUI | 2019-07-26
+// -------------------------------------------------------------------- GUI | 2019-07-26		SETUP-3120-B
 @import 	"module/3020_setup/mediaobject";
 
-@import 	"genesis/genesis-sample-291/media-queries";					// GENESIS-SAMPLE 2.9.1
-@import 	"genesis/genesis-sample-291/print-styles";					// GENESIS-SAMPLE 2.9.1
+@import 	"genesis/genesis-sample-291/media-queries";					// GENESIS-SAMPLE 2.9.1	SETUP-3120-B
+@import 	"genesis/genesis-sample-291/print-styles";					// GENESIS-SAMPLE 2.9.1	SETUP-3120-B
 
 
-// -------------------------------------------------------------------- GUTENBERG | 2019-07-23
+// -------------------------------------------------------------------- GUTENBERG | 2019-07-23	SETUP-3120-B
 @import 	"gutenberg/3020_setup/typography";
 @import 	"gutenberg/2911_setup/columns";
 @import 	"gutenberg/2911_setup/images";
@@ -151,8 +160,11 @@
 @import 	"gutenberg/2911_setup/uncategorized";
 //@import 	"gutenberg/2911_setup/styleeditor";
 
-// -------------------------------------------------------------------- GUIDE | 2019-04-02
+// -------------------------------------------------------------------- GUIDE | 2019-04-02		SETUP-3120-B
 @import 	"guide/2911_setup/label";
 //@import 	"guide/260_setupbasic/header";
 //@import 	"guide/260_setupbasic/inner";
 //@import 	"guide/260_setupbasic/footer";
+
+// -------------------------------------------------------------------- PLUGIN | 2019-10-09		SETUP-3120-B
+//@import 	"plugin/3120_setup/mailchimp";

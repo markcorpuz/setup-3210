@@ -1,4 +1,4 @@
-/* SETUP | SETUP-3120 | STYLE - 2019-09-23 9:35 AM */
+/* SETUP | SETUP-3120 | STYLE - 2019-11-04 7:03 AM */
 /*
 Theme Name: SETUP-3120
 Theme URI: https://setup.basestructure.com/
@@ -6,7 +6,7 @@ Description: This is the prototype theme created by Mark Corpuz.
 Author: Mark Corpuz
 Author URI: https://markcorpuz.com/
 
-Version: 3.1.2.0
+Version: 3.1.2.0.B.01
 
 Tags: accessibility-ready, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, left-sidebar, one-column, right-sidebar, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, two-columns, wide-blocks
 
@@ -143,6 +143,8 @@ summary {
   display: none; }
 
 /* stylelint-enable */
+/* stylelint-disable order/properties-alphabetical-order */
+/* stylelint-enable */
 /* SETUP | GRID | 3120_SETUP | NEAT - 2019-09-04 */
 /* SETUP | SELECTOR | 2911_SETUP | BOXSIZING - 2019-04-02 */
 .boxsizing-borderbox, html {
@@ -202,15 +204,15 @@ a.shadow:link, a.shadow:hover {
   display: inline-block; }
 
 /* SETUP | VARIABLES | 2911_SETUP | WIDTH-GRID - 2019-04-02 */
-/* SETUP | VARIABLES | 2911_SETUP | WIDTH-LAYOUT - 2019-04-02 */
-/* SETUP | VARIABLES | 2911_SETUP | WIDTH-RANGE - 2019-04-02 */
+/* SETUP | VARIABLES | 3120_SETUP | WIDTH-LAYOUT - 2019-10-03 */
+/* SETUP | VARIABLES | 3120_SETUP | WIDTH-RANGE - 2019-10-03 */
 /* SETUP | VARIABLES | 2911_SETUP | WIDTH-SPACE - 2019-04-02 */
 /* SETUP | VARIABLES | 2911_SETUP | WIDTH-LINE - 2019-05-27 */
-/* SETUP | VARIABLES | 2911_SETUP | RESPONSIVE-RANGE - 2019-04-02 */
+/* SETUP | VARIABLES | 3120_SETUP | RESPONSIVE-RANGE - 2019-10-07 */
 /* SETUP | VARIABLES | 3120_SETUP | FONTFAMILY - 2019-09-23 */
-/* SETUP | VARIABLES | 3120_SETUP | FONTSIZE - 2019-09-23 */
+/* SETUP | VARIABLES | 3120_SETUP | FONTSIZE - 2019-10-15 */
 /* SETUP | VARIABLES | 3120_SETUP | FONTWEIGHT - 2019-09-23 */
-/* SETUP | VARIABLES | 3120_SETUP | LINEHEIGHT - 2019-09-23 */
+/* SETUP | VARIABLES | 3120_SETUP | LINEHEIGHT - 2019-10-23 */
 /* SETUP | VARIABLES | 3120_SETUP | LETTERSPACING - 2019-09-23 */
 /* SETUP | VARIABLES | 3120_SETUP | COLOR - 2019-09-23 */
 /* SETUP | COLOR | 2911_SETUP | COLOR - 2019-04-02 */
@@ -747,64 +749,49 @@ p {
   margin-top: 0;
   margin-bottom: 1.5rem; }
 
-/* SETUP | CONTENT | 2911_SETUP | LIST - 2019-04-02 */
-li {
-  list-style-type: none; }
+/* SETUP | CONTENT | 3120_SETUP | LIST - 2019-10-31 */
+ul {
+  display: block;
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0; }
 
-li > ul {
-  margin-bottom: 0; }
+ul ul {
+  padding-inline-start: 1em; }
 
-li > ol {
-  margin-bottom: 0; }
+ul ol {
+  padding-inline-start: 1em; }
 
-li.no-liststyle {
-  list-style-type: none; }
+.entry-content ul {
+  list-style-type: disc;
+  padding-inline-start: 1em; }
 
-ol, ul {
-  margin: 0;
-  padding: 0; }
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-block-start: 0;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0; }
 
-ol.list-no-style,
-ol.list-no-style.list-all > li, .entry-content ol.list-no-style,
-.entry-content ol.list-no-style.list-all li, ol.list-no-style-parent.list-parent > li, .entry-content ol.list-no-style.list-parent > li, ol.list-no-style-parent.list-child li li, .entry-content ol.list-no-style.list-child li li, ul.list-no-style,
-ul.list-no-style.list-all > li, .entry-content ul.list-no-style,
-.entry-content ul.list-no-style.list-all li, ul.list-no-style-parent.list-parent > li, .entry-content ul.list-no-style.list-parent > li, ul.list-no-style-parent.list-child li li, .entry-content ul.list-no-style.list-child li li {
-  list-style-type: none; }
+ol ol {
+  padding-inline-start: 1em; }
 
-ol.list-outside,
-.entry-content ol.list-outside, ul.list-outside,
-.entry-content ul.list-outside {
-  list-style-position: outside; }
+ol ul {
+  padding-inline-start: 1em; }
 
-ol.list-inside,
-.entry-content ol.list-inside, ul.list-inside,
-.entry-content ul.list-inside {
-  list-style-position: inside; }
+.entry-content ol {
+  padding-inline-start: 1em; }
 
-.entry-content ol > li {
-  list-style-type: decimal; }
-
-.entry-content ul > li {
-  list-style-type: disc; }
-
-.entry-content ol ul > li, .entry-content ul ul > li {
-  list-style-type: circle; }
-
-.entry-content ol, .entry-content ul {
-  margin-bottom: 1.5rem;
-  list-style-position: inside; }
-
-.entry-content ol ol,
-.entry-content ol ul, .entry-content ul ul,
-.entry-content ul ol {
-  margin-bottom: 0;
-  margin-left: 1.5rem; }
-
-/* SETUP | CONTENT | 3020_SETUP | TITLE - 2019-08-15 */
+/* SETUP | CONTENT | 3120_SETUP | TITLE - 2019-10-02 */
 .entry-title {
   font-size: 3rem;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.125;
   margin-bottom: 2rem; }
   @media only screen and (max-width: 48rem) {
     .entry-title {
@@ -820,40 +807,22 @@ ol.list-inside,
 .widgettitle {
   font-size: 0.875rem; }
 
-.blog .entry-title, .category .entry-title, .tag .entry-title, .search-results .entry-title {
-  font-size: 3rem;
+.archive .entry-title, .category .entry-title, .tag .entry-title, .blog .entry-title, .search-results .entry-title {
+  font-size: 2.25rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.125;
   margin-bottom: 0.5rem; }
   @media only screen and (max-width: 48rem) {
-    .blog .entry-title, .category .entry-title, .tag .entry-title, .search-results .entry-title {
+    .archive .entry-title, .category .entry-title, .tag .entry-title, .blog .entry-title, .search-results .entry-title {
       font-size: 2.25rem; } }
   @media only screen and (max-width: 32rem) {
-    .blog .entry-title, .category .entry-title, .tag .entry-title, .search-results .entry-title {
-      font-size: 1.5rem; } }
-
-.archive .entry-title {
-  font-size: 3rem;
-  font-weight: 300;
-  line-height: 1.2;
-  margin-bottom: 0.5rem; }
-  @media only screen and (max-width: 48rem) {
-    .archive .entry-title {
-      font-size: 1.5rem; } }
-  @media only screen and (max-width: 32rem) {
-    .archive .entry-title {
+    .archive .entry-title, .category .entry-title, .tag .entry-title, .blog .entry-title, .search-results .entry-title {
       font-size: 1.5rem; } }
 
 .archive-title {
-  font-size: 2.125rem; }
-  @media only screen and (max-width: 48rem) {
-    .archive-title {
-      font-size: 1.5rem; } }
-  @media only screen and (max-width: 32rem) {
-    .archive-title {
-      font-size: 1.5rem; } }
+  font-size: 2.25rem; }
 
-/* SETUP | CONTENT | 2911_SETUP | ALIGN - 2019-04-02 */
+/* SETUP | CONTENT | 3120_SETUP | ALIGN - 2019-10-07 */
 .alignleft, img.alignleft {
   float: left; }
 
@@ -870,55 +839,32 @@ img.alignleft, .featured-content a.alignleft .entry-image {
 img.alignright, .featured-content a.alignright .entry-image {
   margin-left: 1.5rem; }
 
-.alignfull, .maxwidth, .wp-block-cover.alignfull,
-.site-container .wp-block-cover.alignfull, .wp-block-image.alignfull {
-  margin-left: calc(-100vw / 2 + 100% / 2);
-  margin-right: calc(-100vw / 2 + 100% / 2);
-  max-width: 100vw; }
+.alignfull, .alignwide {
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  max-width: 100vw;
+  width: 100vw; }
 
-.full-width-content .entry-content .alignfull {
-  /*
-		width: 100vw;
-		position: relative;
-		left: 50%;
-		right: 50%;
-		margin-left: -50vw;
-		margin-right: -50vw;
-		*/ }
-
-.content-sidebar .entry-content .alignfull, .sidebar-content .entry-content .alignfull {
-  margin-left: 0;
-  margin-right: 0;
-  max-width: 100%;
-  width: 100%; }
-
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 67rem) {
   .alignwide, .full-width-content .site-container .alignwide, .wp-block-cover.alignwide, .wp-block-image.alignwide, .wp-block-video.alignwide,
   .site-container .wp-block-video.alignwide {
-    margin-left: -128px;
-    margin-right: -128px;
-    min-width: 64rem;
-    max-width: 64rem; } }
+    margin-right: calc( ( 48rem - 64rem ) / 2);
+    margin-left: calc( ( 48rem - 64rem ) / 2);
+    max-width: 64rem;
+    width: 64rem; } }
 
-@media only screen and (max-width: 63.9375rem) {
+@media only screen and (max-width: 66.9375rem) {
   .alignwide, .full-width-content .site-container .alignwide, .wp-block-cover.alignwide, .wp-block-image.alignwide, .wp-block-video.alignwide,
   .site-container .wp-block-video.alignwide {
-    margin-left: auto;
     margin-right: auto;
-    width: 100%;
-    max-width: 64rem; } }
-
-@media only screen and (min-width: 64rem) {
-  .content-sidebar .alignwide {
     margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    min-width: auto;
-    max-width: 64rem; } }
+    width: 100%; } }
 
-@media only screen and (max-width: 63.9375rem) {
-  .content-sidebar .alignwide {
-    max-width: 64rem; } }
+@media only screen and (min-width: 67rem) {
+  .content-sidebar .alignwide, .sidebar-content .alignwide {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%; } }
 
 @media only screen and (min-width: 80rem) {
   .alignwide.width-xlrg, .full-width-content.width-xlrg .site-container .alignwide, .wp-block-cover.alignwide.width-xlrg, .wp-block-image.alignwide.width-xlrg {
@@ -932,7 +878,7 @@ img.alignright, .featured-content a.alignright .entry-image {
     min-width: none; } }
 
 @media only screen and (min-width: 80rem) {
-  .content-sidebar .alignwide.width-xlrg {
+  .content-sidebar .alignwide.width-xlrg, .sidebar-content .alignwide.width-xlrg {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -940,7 +886,7 @@ img.alignright, .featured-content a.alignright .entry-image {
     max-width: 80rem; } }
 
 @media only screen and (max-width: 79.9375rem) {
-  .content-sidebar .alignwide.width-xlrg {
+  .content-sidebar .alignwide.width-xlrg, .sidebar-content .alignwide.width-xlrg {
     max-width: 80rem; } }
 
 @media only screen and (min-width: 64rem) {
@@ -955,7 +901,7 @@ img.alignright, .featured-content a.alignright .entry-image {
     max-width: 64rem; } }
 
 @media only screen and (min-width: 64rem) {
-  .content-sidebar .alignwide.width-lrg {
+  .content-sidebar .alignwide.width-lrg, .sidebar-content .alignwide.width-lrg {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -963,7 +909,7 @@ img.alignright, .featured-content a.alignright .entry-image {
     max-width: 64rem; } }
 
 @media only screen and (max-width: 63.9375rem) {
-  .content-sidebar .alignwide.width-lrg {
+  .content-sidebar .alignwide.width-lrg, .sidebar-content .alignwide.width-lrg {
     min-width: none;
     max-width: 64rem; } }
 
@@ -979,7 +925,7 @@ img.alignright, .featured-content a.alignright .entry-image {
     max-width: 48rem; } }
 
 @media only screen and (max-width: 63.9375rem) {
-  .content-sidebar .alignwide.width-med {
+  .content-sidebar .alignwide.width-med, .sidebar-content .alignwide.width-med {
     min-width: auto;
     max-width: 48rem; } }
 
@@ -995,7 +941,7 @@ img.alignright, .featured-content a.alignright .entry-image {
     max-width: 32rem; } }
 
 @media only screen and (max-width: 63.9375rem) {
-  .content-sidebar .alignwide.width-sml {
+  .content-sidebar .alignwide.width-sml, .sidebar-content .alignwide.width-sml {
     min-width: auto;
     max-width: 32rem; } }
 
@@ -1011,7 +957,7 @@ img.alignright, .featured-content a.alignright .entry-image {
     max-width: 26.563rem; } }
 
 @media only screen and (max-width: 63.9375rem) {
-  .content-sidebar .alignwide.width-xsml {
+  .content-sidebar .alignwide.width-xsml, .sidebar-content .alignwide.width-xsml {
     min-width: auto;
     max-width: 26.563rem; } }
 
@@ -1038,7 +984,7 @@ img.alignright, .featured-content a.alignright .entry-image {
 .textjustify {
   text-align: justify; }
 
-/* SETUP | CONTENT | 2911_SETUP | BUTTON - 2019-05-27 */
+/* SETUP | CONTENT | 3120_SETUP | BUTTON - 2019-10-22 */
 .button,
 a.button, .button:link,
 a.button:link, .button:active,
@@ -1437,7 +1383,7 @@ a.button-red:hover {
 .wp-block-cover.fontsize-xlrg .wp-block-cover-text,
 .site-container .wp-block-cover.fontsize-xlrg .wp-block-cover-text, .fontsize-xlrg, .entry-content p.has-xlarge-font-size, .content .wp-block-button.fontsize-xlrg .wp-block-button__link {
   font-size: 3.75rem;
-  line-height: 1.2; }
+  line-height: 1.125; }
   @media only screen and (max-width: 48rem) {
     .wp-block-cover.fontsize-xlrg .wp-block-cover-text,
     .site-container .wp-block-cover.fontsize-xlrg .wp-block-cover-text, .fontsize-xlrg, .entry-content p.has-xlarge-font-size, .content .wp-block-button.fontsize-xlrg .wp-block-button__link {
@@ -1536,15 +1482,18 @@ a.button.fontweight-bold.button-alt:hover, .fontweight-bold {
 .fontweight-thickest {
   font-weight: 900; }
 
-/* SETUP | TYPE | 2911_SETUP | HEIGHT - 2019-04-02 */
+/* SETUP | TYPE | 3120_SETUP | HEIGHT - 2019-10-23 */
 .lineheight-default {
   line-height: 1.5; }
 
 .lineheight-body {
   line-height: 1.5; }
 
+.lineheight-narrowest {
+  line-height: 1.125; }
+
 .lineheight-narrower {
-  line-height: 0.75; }
+  line-height: 1.2; }
 
 .lineheight-narrow {
   line-height: 1.4; }
@@ -1640,9 +1589,7 @@ p.space-bottom, .space, .space-y, .space-bottom, .space-topless {
 .space-xhuge, .space-xhuge-y, .space-xhuge-bottom, .space-xhuge-topless {
   margin-bottom: 10rem; }
 
-p.space-zero-bottom, ol.space-zero-bottom,
-.entry-content ol.space-zero-bottom, ul.space-zero-bottom,
-.entry-content ul.space-zero-bottom, .wp-block-columns.space-zero-bottom, .wp-block-columns .wp-block-column.space-zero-bottom,
+p.space-zero-bottom, .wp-block-columns.space-zero-bottom, .wp-block-columns .wp-block-column.space-zero-bottom,
 .site-container .wp-block-columns .wp-block-column.space-zero-bottom, .wp-block-cover.space-zero-bottom,
 .site-container .wp-block-cover.space-zero-bottom, .wp-block-image.space-zero-bottom,
 .site-container .wp-block-image.space-zero-bottom, .wp-block-video.space-zero-bottom,
@@ -3813,7 +3760,7 @@ th:first-child {
 
 /* Site Inner
 --------------------------------------------- */
-/* SETUP | GENESIS | GENESIS-SAMPLE-291 | COMMON-CLASSES - 2019-04-02 */
+/* SETUP | GENESIS | GENESIS-SAMPLE-291 | COMMON-CLASSES - 2019-10-15 */
 /* Common Classes
 ---------------------------------------------------------------------------- */
 /* Avatar
@@ -3831,12 +3778,6 @@ th:first-child {
 
 .after-entry .widget:last-of-type {
   margin-bottom: 0; }
-
-.breadcrumb {
-  border-bottom: 1px solid #eee;
-  font-size: 16px;
-  margin-bottom: 40px;
-  padding-bottom: 10px; }
 
 .archive-description p:last-child,
 .author-box p:last-child {
@@ -3867,42 +3808,6 @@ th:first-child {
 /* Titles
 --------------------------------------------- */
 /* WordPress
---------------------------------------------- */
-/* SETUP | GENESIS | GENESIS-SAMPLE-291 | WIDGETS - 2019-04-02 */
-/* Widgets
----------------------------------------------------------------------------- */
-.widget {
-  margin-bottom: 40px; }
-
-.widget p:last-child,
-.widget ul > li:last-of-type {
-  margin-bottom: 0; }
-
-.widget ul > li {
-  margin-bottom: 10px; }
-
-.widget ul > li:last-of-type {
-  padding-bottom: 0; }
-
-.widget ol > li {
-  list-style-position: inside;
-  list-style-type: decimal;
-  padding-left: 20px;
-  text-indent: -20px; }
-
-.widget li li {
-  border: 0;
-  margin: 0 0 0 30px;
-  padding: 0; }
-
-.widget_calendar table {
-  width: 100%; }
-
-.widget_calendar td,
-.widget_calendar th {
-  text-align: center; }
-
-/* Featured Content
 --------------------------------------------- */
 /* SETUP | GENESIS | GENESIS-SAMPLE-291 | PLUGINS - 2019-04-02 */
 /* Plugins
@@ -4143,7 +4048,7 @@ th:first-child {
 /* SETUP | GENESIS | GENESIS-SAMPLE-291 | SITE-FOOTER - 2019-04-02 */
 /* Site Footer
 ---------------------------------------------------------------------------- */
-/* SETUP | MENU | 3020_SETUP | NAV - 2019-07-24 */
+/* SETUP | MENU | 3120_SETUP | NAV - 2019-10-17 */
 /* SETUP | HEADER | 3020_SETUP | HEADER-LEFTRIGHT-LINE_FLEX - 2019-08-15 */
 /* Note: The width defined on the custom logo forces the title area to be limited */
 .site-header {
@@ -4218,28 +4123,18 @@ a.custom-logo-link {
   .site-header .nav-primary #mega-menu-wrap-primary #mega-menu-primary {
     text-align: center; } }
 
-/* SETUP | INNER | 2911_SETUP | INNER_GRID - 2019-04-02 */
+/* SETUP | INNER | 3120_SETUP | INNER - 2019-10-07 */
 .site-inner {
-  display: grid;
-  display: -ms-grid;
-  grid-template-columns: 1fr;
-  -ms-grid-columns: 1fr;
-  padding: 3rem 2rem; }
-  @media only screen and (min-width: 64rem) {
-    .site-inner {
-      grid-template-columns: 1fr minmax(0, 48rem) 1fr;
-      -ms-grid-columns: 1fr minmax(0, 48rem) 1fr; } }
+  padding: 1.5rem; }
 
 .site-inner .content-sidebar-wrap {
-  grid-column: 1;
-  -ms-grid-column: 1; }
-  @media only screen and (min-width: 64rem) {
-    .site-inner .content-sidebar-wrap {
-      grid-column: 2;
-      -ms-grid-column: 2; } }
+  margin-right: auto;
+  margin-left: auto; }
 
 .content {
-  grid-area: content; }
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 768px; }
 
 .inner-spacein-zero .site-inner {
   padding: 0; }
@@ -4250,11 +4145,18 @@ a.custom-logo-link {
 .inner-spacein-zero-bottom .site-inner {
   padding-bottom: 0; }
 
-/* SETUP | LAYOUT | 2911_SETUP | CS_GRID - 2019-04-02 */
-@media only screen and (min-width: 64rem) {
-  .content-sidebar .site-inner {
-    grid-template-columns: 1fr minmax(0, 68.75rem) 1fr;
-    -ms-grid-columns: 1fr minmax(0, 68.75rem) 1fr; } }
+/* SETUP | LAYOUT | 3120_SETUP | CS - 2019-10-18 */
+.content-sidebar .site-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  display: -ms-grid;
+  -ms-grid-columns: 1fr;
+  -ms-grid-rows: auto; }
+  @media only screen and (min-width: 71.25rem) {
+    .content-sidebar .site-inner {
+      -ms-grid-columns: 1fr minmax(0, 71.25rem) 1fr;
+      grid-template-columns: 1fr minmax(0, 71.25rem) 1fr; } }
 
 .content-sidebar .content-sidebar-wrap {
   display: grid;
@@ -4263,40 +4165,53 @@ a.custom-logo-link {
   display: -ms-grid;
   -ms-grid-columns: 1fr;
   -ms-grid-rows: auto; }
-  @media only screen and (min-width: 64rem) {
+  @media only screen and (min-width: 71.25rem) {
     .content-sidebar .content-sidebar-wrap {
-      -ms-grid-columns: minmax(0, 48rem) 2rem minmax(0, 18.75rem);
-      grid-template-columns: minmax(0, 48rem) 2rem minmax(0, 18.75rem); } }
+      -ms-grid-column: 2;
+      grid-column: 2;
+      -ms-grid-row: 1;
+      grid-row: 1;
+      -ms-grid-columns: minmax(0, 48rem) 1.5rem minmax(0, 18.75rem);
+      grid-template-columns: minmax(0, 48rem) 1.5rem minmax(0, 18.75rem); } }
 
 .content-sidebar .content {
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
   grid-row: 1; }
-  @media only screen and (min-width: 64rem) {
+  @media only screen and (min-width: 71.25rem) {
     .content-sidebar .content {
       -ms-grid-column: 1;
       grid-column: 1;
       -ms-grid-row: 1;
-      grid-row: 1; } }
+      grid-row: 1;
+      margin-right: 0;
+      margin-left: 0; } }
 
 .content-sidebar .sidebar-primary {
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 2;
   grid-row: 2; }
-  @media only screen and (min-width: 64rem) {
+  @media only screen and (min-width: 71.25rem) {
     .content-sidebar .sidebar-primary {
       -ms-grid-column: 3;
       grid-column: 3;
       -ms-grid-row: 1;
       grid-row: 1; } }
 
-/* SETUP | LAYOUT | 2911_SETUP | SC_GRID - 2019-04-02 */
-@media only screen and (min-width: 64rem) {
-  .sidebar-content .site-inner {
-    grid-template-columns: 1fr minmax(0, 68.75rem) 1fr;
-    -ms-grid-columns: 1fr minmax(0, 68.75rem) 1fr; } }
+/* SETUP | LAYOUT | 3120_SETUP | SC_GRID - 2019-10-18 */
+.sidebar-content .site-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  display: -ms-grid;
+  -ms-grid-columns: 1fr;
+  -ms-grid-rows: auto; }
+  @media only screen and (min-width: 64rem) {
+    .sidebar-content .site-inner {
+      -ms-grid-columns: 1fr minmax(0, 71.25rem) 1fr;
+      grid-template-columns: 1fr minmax(0, 71.25rem) 1fr; } }
 
 .sidebar-content .content-sidebar-wrap {
   display: grid;
@@ -4307,6 +4222,10 @@ a.custom-logo-link {
   -ms-grid-rows: auto; }
   @media only screen and (min-width: 64rem) {
     .sidebar-content .content-sidebar-wrap {
+      -ms-grid-column: 2;
+      grid-column: 2;
+      -ms-grid-row: 1;
+      grid-row: 1;
       -ms-grid-columns: minmax(0, 18.75rem) 2rem minmax(0, 48rem);
       grid-template-columns: minmax(0, 18.75rem) 2rem minmax(0, 48rem); } }
 
@@ -4320,7 +4239,9 @@ a.custom-logo-link {
       -ms-grid-column: 3;
       grid-column: 3;
       -ms-grid-row: 1;
-      grid-row: 1; } }
+      grid-row: 1;
+      margin-right: 0;
+      margin-left: 0; } }
 
 .sidebar-content .sidebar-primary {
   -ms-grid-column: 1;
@@ -4499,8 +4420,21 @@ a.custom-logo-link {
 .siteby a:hover {
   text-decoration: none; }
 
-/* SETUP | LOOP | 3020_SETUP | ENTRY - 2019-08-15 */
+/* SETUP | WIDGET | 3120_SETUP | WIDGET - 2019-10-31 */
+.widget {
+  margin-bottom: 1rem; }
+
+/* SETUP | LOOP | 3120_SETUP | BREADCRUMB - 2019-10-15 */
+.breadcrumb {
+  border-bottom: 1px solid #eee;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem; }
+
+/* SETUP | LOOP | 3120_SETUP | ENTRY - 2019-10-02 */
 .blog .entry {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
   margin-bottom: 2rem; }
 
 .single .content .entry {
@@ -5195,24 +5129,9 @@ a.custom-logo-link {
   color: #eee;
   background-color: #147FC4; }
 
-/* SETUP | GUTTENBERG | 2911_SETUP | UNCATEGORIZED - 2019-04-02 */
+/* SETUP | GUTTENBERG | 2911_SETUP | UNCATEGORIZED - 2019-10-31 */
 /* Category Block
 ---------------------------------------------------------------------------- */
-.entry-content .wp-block-categories,
-.entry-content .wp-block-categories ol,
-.entry-content .wp-block-categories ul {
-  margin-left: 0;
-  padding-left: 0; }
-
-.entry-content .wp-block-categories li {
-  list-style-type: none; }
-
-.entry-content .wp-block-categories.aligncenter {
-  text-align: center; }
-
-.entry-content .wp-block-categories-list.alignfull {
-  padding: 0 30px; }
-
 /* Latest Posts Block
 ---------------------------------------------------------------------------- */
 .entry-content .wp-block-latest-posts {
